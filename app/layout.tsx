@@ -46,8 +46,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(geistSans.variable, geistMono.variable, instrumentSerif.variable)}>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning className={cn(geistSans.variable, geistMono.variable, instrumentSerif.variable)}>
         <V0Provider isV0={isV0}>
           {children}
           {isV0 && <V0Setup />}
