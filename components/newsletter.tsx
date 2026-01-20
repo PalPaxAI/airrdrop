@@ -52,16 +52,24 @@ export const Newsletter = () => {
 
   return (
     <div className="flex overflow-hidden relative flex-col gap-4 justify-center items-center pt-10 w-full h-full short:lg:pt-10 pb-footer-safe-area 2xl:pt-footer-safe-area px-sides short:lg:gap-4 lg:gap-8">
+      {/* background label */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <div className="font-serif italic text-6xl sm:text-7xl lg:text-8xl text-foreground/15 select-none">
+          Airdrop
+        </div>
+      </div>
+
       <motion.div
         layout="position"
         transition={{ duration: DURATION, ease: EASE_OUT }}
+        className="relative z-10"
       >
         <h1 className="font-serif text-5xl italic short:lg:text-8xl sm:text-8xl lg:text-9xl text-foreground">
           Synecdoche®
         </h1>
       </motion.div>
 
-      <div className="flex flex-col items-center min-h-0 shrink">
+      <div className="relative z-10 flex flex-col items-center min-h-0 shrink">
         <AnimatePresenceGuard>
           {/* newsletter signup removed */}
 

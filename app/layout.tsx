@@ -36,7 +36,12 @@ export const metadata: Metadata = {
     "We stand at the forefront of a new era, where creativity meets technology to redefine what's possible. Our mission is to empower individuals and businesses alike with groundbreaking solutions that inspire change and drive progress.",
   generator: "v0.app",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/icon.png" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+    ],
+    shortcut: [{ url: "/icon.png" }],
+    apple: [{ url: "/apple-icon.png" }],
   },
 }
 
